@@ -927,7 +927,7 @@ footer .copyright {
     }
 
     .navbar a {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .hero {
@@ -942,7 +942,7 @@ footer .copyright {
     }
 
     .hero h1 {
-        font-size: clamp(42px, 13vw, 60px);
+        font-size: clamp(46px, 14vw, 64px);
     }
 
     .hero-date {
