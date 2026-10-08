@@ -774,275 +774,192 @@ footer .copyright {
     to { transform: rotate(360deg); }
 }
 
-/* MOBILE */
+/* MOBILE - TAMPILAN SAMA DENGAN DESKTOP */
+
 @media (max-width: 850px) {
-    .hero {
-        grid-template-columns: 1fr;
-        padding: 60px 22px;
-    }
 
-    .hero-photo {
-        width: min(82vw, 390px);
-        margin: auto;
-    }
-
-    .couple-container {
-        flex-direction: column;
-    }
-
-    .and-symbol {
-        line-height: .6;
-    }
-
-    .event-container {
-        grid-template-columns: 1fr;
-        max-width: 430px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-    }
-}
-
-@media (max-width: 600px) {
+    /* NAVBAR */
     .navbar {
-        gap: 5px 14px;
-        padding: 11px 10px;
-    }
-
-    .navbar a {
-        font-size: 10px;
-    }
-
-    .opening {
-        padding: 20px;
-    }
-
-    .opening-title {
-        font-size: clamp(55px, 18vw, 85px);
-    }
-
-    .section {
-        padding: 75px 18px;
-    }
-
-    .couple-card {
-        padding: 24px 18px;
-    }
-
-    .couple-photo {
-        width: 180px;
-    }
-
-    .countdown {
-        gap: 8px;
-    }
-
-    .time-box {
-        width: calc(50% - 8px);
-        max-width: 145px;
-    }
-
-    .time-box span {
-        font-size: 36px;
-    }
-
-    .timeline::before {
-        left: 8px;
-    }
-
-    .story-item,
-    .story-item:nth-child(even) {
-        display: block;
-        padding-left: 25px;
-        text-align: left;
-    }
-
-    .story-year,
-    .story-item:nth-child(even) .story-year {
-        justify-content: flex-start;
-        margin-bottom: 5px;
-        font-size: 28px;
-    }
-
-    .story-item:nth-child(even) .story-content {
-        text-align: left;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 190px;
-        gap: 9px;
-    }
-
-    .gallery-item.tall {
-        grid-row: span 1;
-    }
-
-    .gallery-item:first-child {
-        grid-column: span 2;
-    }
-
-    .gallery-item:first-child img {
-        object-position: center 35%;
-    }
-}
-
-/* RESPONSIVE TAMBAHAN UNTUK HP */
-@media (max-width: 480px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .opening-content {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .opening-title {
-        font-size: clamp(48px, 17vw, 70px);
-        letter-spacing: -1px;
-    }
-
-    .opening-date {
-        font-size: 22px;
-    }
-
-    .cover-note {
-        font-size: 12px;
-        margin: 22px 0 18px;
-    }
-
-    .btn-open {
-        padding: 12px 22px;
-        font-size: 13px;
-    }
-
-    .navbar {
-        gap: 6px 12px;
-        padding: 10px 8px;
+        gap: 8px 18px;
+        padding: 14px 12px;
     }
 
     .navbar a {
         font-size: 11px;
     }
 
+    /* HERO - TETAP 2 KOLOM SEPERTI LAPTOP */
     .hero {
-        width: 100%;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 25px;
+        padding: 60px 20px;
         min-height: auto;
-        padding: 50px 16px;
-        gap: 35px;
     }
 
     .hero-photo {
-        width: min(88vw, 340px);
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
     }
 
     .hero h1 {
-        font-size: clamp(46px, 14vw, 64px);
+        font-size: clamp(38px, 7vw, 64px);
     }
 
     .hero-date {
-        font-size: 23px;
+        font-size: 24px;
     }
 
     .quote {
         font-size: 13px;
     }
 
+    /* SECTION */
     .section {
         width: 100%;
-        padding: 65px 15px;
+        padding: 80px 20px;
     }
 
     .section-heading {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 
     .section-heading h2 {
-        font-size: clamp(36px, 12vw, 50px);
+        font-size: clamp(38px, 6vw, 58px);
+    }
+
+    /* COUPLE - TETAP BERJAJAR */
+    .couple-container {
+        flex-direction: row;
+        gap: 20px;
     }
 
     .couple-card {
-        width: 100%;
-        max-width: 340px;
+        width: min(350px, 45%);
+        padding: 25px 18px;
+    }
+
+    .couple-photo {
+        width: min(180px, 100%);
     }
 
     .couple-card h3 {
         font-size: 30px;
     }
 
+    .and-symbol {
+        font-size: 52px;
+        line-height: 1;
+    }
+
+    /* COUNTDOWN */
     .countdown-section {
-        padding: 70px 15px;
+        padding: 85px 15px;
         background-attachment: scroll;
     }
 
+    .countdown {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
     .time-box {
-        width: calc(50% - 5px);
-        max-width: 140px;
-        padding: 17px 6px;
+        width: 105px;
+        padding: 18px 6px;
     }
 
     .time-box span {
-        font-size: 32px;
+        font-size: 38px;
+    }
+
+    /* EVENTS - TETAP 2 KOLOM */
+    .event-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        max-width: 800px;
     }
 
     .event-card {
-        padding: 32px 20px;
+        padding: 35px 18px;
     }
 
     .event-card h3 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
+    /* STORY - TETAP 2 KOLOM */
     .story-section {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .timeline {
+        max-width: 800px;
+    }
+
+    .story-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .story-year {
+        font-size: 30px;
     }
 
     .story-content {
         padding: 18px;
     }
 
+    /* GALLERY - TETAP 4 KOLOM */
     .gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 165px;
-        gap: 7px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 150px;
+        gap: 8px;
     }
 
+    .gallery-item.tall {
+        grid-row: span 2;
+    }
+
+    .gallery-item:first-child {
+        grid-column: auto;
+    }
+
+    /* WISHES */
     .wish-form,
     #daftarUcapan {
-        width: 100%;
+        width: min(620px, 100%);
     }
 
+    /* SHARE */
     .share-section {
-        padding: 70px 15px;
+        padding: 80px 20px;
     }
 
     .share-actions {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .share-actions button {
-        width: min(280px, 100%);
+        width: auto;
     }
 
+    /* FOOTER */
     footer {
-        padding: 50px 15px;
+        padding: 60px 20px;
     }
 
     footer h2 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
+    /* MUSIC */
     .music-button {
-        right: 12px;
-        bottom: 12px;
-        width: 44px;
-        height: 44px;
+        right: 15px;
+        bottom: 15px;
+        width: 46px;
+        height: 46px;
     }
 }
