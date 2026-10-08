@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8b6f5a">
+    <meta name="description" content="Undangan Pernikahan Ifan Maulana & Firma Naelun Tazila">
+    <title>Undangan Pernikahan — Ifan & Firma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- COVER -->
+    <section id="opening" class="opening">
+        <div class="cover-overlay"></div>
+        <div class="opening-content">
+            <p class="eyebrow">THE WEDDING OF</p>
+            <p class="cover-label">Dengan penuh kebahagiaan</p>
+            <h1 class="opening-title">Ifan <span>&amp;</span> Firma</h1>
+            <p class="opening-date">15 Januari 2027</p>
+            <p class="cover-note">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <button class="btn-open" onclick="bukaUndangan()" type="button">
+                <span>💌</span> Buka Undangan
+            </button>
+        </div>
+        <div class="cover-bottom">Scroll untuk membuka cerita kami</div>
+    </section>
+
+    <main id="main-content" class="hidden">
+        <!-- NAVIGATION -->
+        <nav class="navbar" aria-label="Navigasi undangan">
+            <a href="#home">Home</a>
+            <a href="#mempelai">Mempelai</a>
+            <a href="#acara">Acara</a>
+            <a href="#cerita">Cerita</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#ucapan">Ucapan</a>
+        </nav>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-photo">
+                <img src="IF2.jpeg" alt="Ifan dan Firma">
+            </div>
+            <div class="hero-content">
+                <p class="eyebrow">WE ARE GETTING MARRIED</p>
+                <h1>Ifan Maulana <span>&amp;</span> Firma Naelun Tazila</h1>
+                <p class="hero-date">15 Januari 2027</p>
+                <p class="quote">“Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Anda untuk hadir dan memberikan doa restu di hari bahagia kami.”</p>
+                <a class="scroll-button" href="#mempelai">Lihat Undangan ↓</a>
+            </div>
+        </section>
+
+        <!-- MEMPELAI -->
+        <section id="mempelai" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">OUR SPECIAL DAY</p>
+                <h2>Mempelai</h2>
+                <div class="ornament">✦</div>
+            </div>
+
+            <div class="couple-container">
+                <article class="couple-card">
+                    <div class="couple-photo">
+                        <img src="IF2.jpeg" alt="Ifan Maulana">
+                    </div>
+                    <p class="role">THE GROOM</p>
+                    <h3>Ifan Maulana</h3>
+                    <p>Putra dari<br><strong>Bapak Taryono</strong><br>dan <strong>Ibu Sumyati</strong></p>
+                </article>
+
+                <div class="and-symbol" aria-hidden="true">&amp;</div>
+
+                <article class="couple-card">
+                    <div class="couple-photo">
+                        <img src="IF2.jpeg" alt="Firma Naelun Tazila">
+                    </div>
+                    <p class="role">THE BRIDE</p>
+                    <h3>Firma Naelun Tazila</h3>
+                    <p>Putri dari<br><strong>Bapak Muhammad Fatchuri</strong><br>dan <strong>Ibu Marsih</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section class="countdown-section">
+            <div class="section-heading">
+                <p class="eyebrow">COUNTING DOWN TO</p>
+                <h2>Hari Bahagia Kami</h2>
+            </div>
+            <div class="countdown" aria-label="Hitung mundur menuju pernikahan">
+                <div class="time-box"><span id="days">0</span><small>Hari</small></div>
+                <div class="time-box"><span id="hours">0</span><small>Jam</small></div>
+                <div class="time-box"><span id="minutes">0</span><small>Menit</small></div>
+                <div class="time-box"><span id="seconds">0</span><small>Detik</small></div>
+            </div>
+        </section>
+
+        <!-- ACARA -->
+        <section id="acara" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">SAVE THE DATE</p>
+                <h2>Acara Pernikahan</h2>
+                <div class="ornament">✦</div>
+            </div>
+
+            <div class="event-container">
+                <article class="event-card">
+                    <div class="event-icon">💍</div>
+                    <p class="role">CEREMONY</p>
+                    <h3>Akad Nikah</h3>
+                    <p><strong>Jumat, 15 Januari 2027</strong></p>
+                    <p>09.00 WIB</p>
+                    <p>Gedung Serbaguna</p>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-icon">🥂</div>
+                    <p class="role">RECEPTION</p>
+                    <h3>Resepsi</h3>
+                    <p><strong>Jumat, 15 Januari 2027</strong></p>
+                    <p>11.00 WIB – Selesai</p>
+                    <p>Gedung Serbaguna</p>
+                </article>
+            </div>
+
+            <!-- Ganti href ini dengan link Google Maps lokasi asli -->
+            <a class="map-button" href="https://www.google.com/maps" target="_blank" rel="noopener">
+                📍 Lihat Lokasi
+            </a>
+        </section>
+
+        <!-- STORY -->
+        <section id="cerita" class="section story-section">
+            <div class="section-heading">
+                <p class="eyebrow">OUR STORY</p>
+                <h2>Cerita Kami</h2>
+                <div class="ornament">✦</div>
+            </div>
+
+            <div class="timeline">
+                <article class="story-item">
+                    <div class="story-year">2024</div>
+                    <div class="story-content">
+                        <h3>Pertama Bertemu</h3>
+                        <p>Awal dari sebuah pertemuan yang menjadi bagian penting dalam perjalanan kami.</p>
+                    </div>
+                </article>
+                <article class="story-item">
+                    <div class="story-year">2025</div>
+                    <div class="story-content">
+                        <h3>Mulai Bersama</h3>
+                        <p>Menjalani hari demi hari, saling mengenal dan tumbuh bersama.</p>
+                    </div>
+                </article>
+                <article class="story-item">
+                    <div class="story-year">2026</div>
+                    <div class="story-content">
+                        <h3>Lamaran</h3>
+                        <p>Satu langkah lebih dekat menuju janji dan kehidupan baru bersama.</p>
+                    </div>
+                </article>
+                <article class="story-item">
+                    <div class="story-year">2027</div>
+                    <div class="story-content">
+                        <h3>Hari Pernikahan</h3>
+                        <p>Hari yang kami nantikan, untuk memulai perjalanan baru sebagai keluarga.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- GALERI -->
+        <section id="galeri" class="section gallery-section">
+            <div class="section-heading">
+                <p class="eyebrow">OUR MOMENTS</p>
+                <h2>Galeri</h2>
+                <div class="ornament">✦</div>
+            </div>
+
+            <div class="gallery">
+                <button class="gallery-item" type="button" onclick="bukaFoto('IF1.jpeg', 'Momen bersama')">
+                    <img src="IF1.jpeg" alt="Momen bersama Ifan dan Firma" loading="lazy">
+                </button>
+                <button class="gallery-item" type="button" onclick="bukaFoto('IF2.jpeg', 'Ifan dan Firma')"</button>
+                    <img src="IF2.jpeg" alt="Ifan dan Firma" loading="lazy">
+                </button>
+                <button class="gallery-item" type="button" onclick="bukaFoto('IF3.jpeg', 'Momen lucu bersama')">
+                    <img src="IF3.jpeg" alt="Momen lucu bersama" loading="lazy">
+                </button>
+                <button class="gallery-item" type="button" onclick="bukaFoto('IF4.jpeg', 'Momen bersama')">
+                    <img src="IF4.jpeg" alt="Momen bersama" loading="lazy">
+                </button>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox" class="lightbox" aria-hidden="true" onclick="tutupFoto(event)">
+            <button class="lightbox-close" type="button" aria-label="Tutup">×</button>
+            <img id="lightboxImage" src="" alt="">
+            <p id="lightboxCaption"></p>
+        </div>
+
+        <!-- WISHES -->
+        <section id="ucapan" class="section wishes-section">
+            <div class="section-heading">
+                <p class="eyebrow">WISHES</p>
+                <h2>Ucapan &amp; Doa</h2>
+                <div class="ornament">✦</div>
+            </div>
+
+            <form class="wish-form" onsubmit="kirimUcapan(event)">
+                <input type="text" id="nama" placeholder="Nama Anda" maxlength="60" required>
+                <textarea id="ucapanText" placeholder="Tuliskan ucapan dan doa..." maxlength="500" required></textarea>
+                <button type="submit">Kirim Ucapan</button>
+            </form>
+            <div id="daftarUcapan" aria-live="polite"></div>
+        </section>
+
+        <!-- SHARE -->
+        <section class="share-section">
+            <div class="section-heading">
+                <p class="eyebrow">SHARE THE LOVE</p>
+                <h2>Bagikan Undangan</h2>
+            </div>
+            <p>Silakan bagikan undangan ini kepada keluarga dan teman.</p>
+            <div class="share-actions">
+                <button type="button" onclick="bagikanWhatsApp()">💬 Bagikan WhatsApp</button>
+                <button type="button" class="secondary-button" onclick="salinLink()">🔗 Salin Link</button>
+            </div>
+            <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            <p class="eyebrow">WITH LOVE</p>
+            <h2>Ifan <span>&amp;</span> Firma</h2>
+            <p>Terima kasih atas doa dan kehadiran Anda.</p>
+            <p class="copyright">© 2027 Wedding Invitation</p>
+        </footer>
+    </main>
+
+    <button id="musicButton" class="music-button" type="button" onclick="toggleMusic()" aria-label="Musik">
+        🎵
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
